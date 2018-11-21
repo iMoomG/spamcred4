@@ -1,14 +1,14 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var prefix = "1";
+var prefix = "3";
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);  
 });
 
 client.on('ready', async() => {
-var server = "514855711830835202"; // «ÌœÌ «·”——›—
-var channel = "514855712380157959";//«ÌœÌ «·—Ê„
+var server = "514855711830835202"; // √á√≠√è√≠ √á√°√ì√ë√ë√ù√ë
+var channel = "514855712380157959";//√á√≠√è√≠ √á√°√ë√¶√£
     setInterval(()=>{
     client.guilds.get(server).channels.get(channel).send('**Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , **')
     },305);
@@ -24,7 +24,7 @@ client.on('message', message => {
   let args = message.content.split(" ").slice(1);
 
   if (command == "say") {
-if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('?|**\`ADMINISTRATOR\`·Ì” ·œÌﬂ ’·«ÕÌ« `**');
+if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('?|**\`ADMINISTRATOR\`√°√≠√ì √°√è√≠√ü √ï√°√á√ç√≠√á√ä`**');
    message.channel.sendMessage(args.join("  "))
    message.delete()
   }
